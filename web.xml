@@ -1,0 +1,11 @@
+<web-app>
+  <servlet>
+    <servlet-name>MusicServlet</servlet-name>
+    <servlet-class>com.example.music.MusicServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>MusicServlet</servlet-name>
+    <url-pattern>/music</url-pattern>
+  </servlet-mapping>
+</web-app>
