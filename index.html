@@ -1,40 +1,15 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>हिंदी AI संगीत जनरेटर</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>AI Music Generator</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>🪕 हिंदी AI संगीत जनरेटर</h1>
-        
-        <div class="controls">
-            <label for="genre">शैली चुनें:</label>
-            <select id="genre">
-                <option value="bollywood">बॉलीवुड</option>
-                <option value="classical">शास्त्रीय</option>
-                <option value="bhajan">भजन</option>
-            </select>
-
-            <label for="tempo">टेम्पो (गति):</label>
-            <input type="number" id="tempo" value="120" min="60" max="200">
-
-            <button onclick="generateMusic()">संगीत बनाएं</button>
-        </div>
-
-        <div id="loading" class="hidden">संगीत बनाया जा रहा है... कृपया प्रतीक्षा करें!</div>
-        
-        <div id="player" class="hidden">
-            <audio id="audioPlayer" controls></audio>
-            <button onclick="downloadMusic()">डाउनलोड करें</button>
-        </div>
-    </div>
-
-    <!-- Include Magenta.js and Tone.js for music playback -->
-    <script src="https://cdn.jsdelivr.net/npm/@magenta/music@^1.0.0"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js"></script>
-    <script src="script.js"></script>
+  <h1>AI Music Generator</h1>
+  <textarea id="prompt" placeholder="Enter your music prompt..."></textarea>
+  <button id="generateButton">Generate Music</button>
+  <audio id="audioPlayer" controls></audio>
+  <script src="script.js"></script>
 </body>
 </html>
